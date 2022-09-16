@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CAPSTONE</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav>
+
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="Images/funnelLogo.png">
+          <span class="nav-item">Admin</span>
+        </a></li>
+
+        <li><a href="#">
+          <i class="fas fa-menorah"></i>
+          <span class="nav-item">Dashboard</span>
+        </a></li>
+
+        <li><a href="#">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Message</span>
+        </a></li>
+
+        <li><a href="#">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Report</span>
+        </a></li>
+
+        <li><a href="#">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item">Analitics</span>
+        </a></li>
+
+        <li><a href="#">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">Setting</span>
+        </a></li>
+
+        <li><a href="home.html" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+
+      </ul>
+
+    </nav>
+
+
+
+
+    <section class="main">
+      
+      <div class="dash">
+        <h1>DASHBOARD</h1>
+        <input type="searchbar"  placeholder="Search..">
+      </div>
+      
+
+      <section class="clients">
+
+        <div class="client-list">
+
+
+          <div class="client-header">
+          <h1>Client List</h1>
+          <a href="#divOne" class="a add-client"> <h1>+ Add Client</h1></a>
+          </div>
+
+
+          <div class="overlay" id="divOne">
+            <div class="wrapper">
+              <h2>New Client Information Form</h2><a class="close" href="#">&times;</a>
+              <div class="content">
+                <div class="container">
+                  <form id="person-form">
+
+                    <!-- <label for="id">ID</label>
+                    <input id="id" placeholder="Client ID.." type="text"> -->
+
+                    <label for="name">Name</label>
+                    <input id="name" placeholder="Client name.." type="text">
+
+                    <label for="company">Company</label>
+                    <input id="company" placeholder="Company.." type="text">
+
+                    <label for="phoneNumber">Phone Number</label> 
+                    <input id="phoneNumber" placeholder="Phone Number.." type="text">
+
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="Email.." type="text">
+
+                    <label for="status">Status</label>
+                    <input id="status" placeholder="Ex: Working, Follow Up, Pending.." type="text">
+
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" placeholder="Write something.."></textarea>
+
+                    <input type="submit" value="Submit" id="submit-btn">
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <table class="table" id="clients-table">
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+
+
+            <tbody>
+              
+            </tbody>
+
+            <tbody>
+              <tr>
+                <!-- <td>01</td>
+                <td>Sam David</td>
+                <td>Design</td>
+                <td>03-24-22</td>
+                <td>8:00AM</td>
+                <td>3:00PM</td>
+                <td><button>View</button></td> -->
+              </tr>
+            
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+    </section>
+    
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
